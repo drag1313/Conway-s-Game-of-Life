@@ -6,28 +6,35 @@ import java.util.Random;
 public class Field {
 
 
-    public void box() {
-        //сделать рамку
+    public void firstGeneation(boolean[][] graph) {
 
-    }
-
-    public void firstGeneation(char[][] graph) {
-        char symbol;
         Random rand = new Random();
         for (int i = 0; i < graph.length; i++) {
             for (int j = 0; j < graph[i].length; j++) {
-                int r = rand.nextInt(2);
-                if (r == 1) {
+                boolean r = rand.nextBoolean();
+                graph[i][j] = r;
+            }
+
+        }
+    }
+
+    public void printfield(boolean[][] graph) {
+        char symbol;
+        char[][] graph2 = new char[Game.getHight()][Game.getWidth()];
+        for (int i = 0; i < graph.length; i++) {
+            for (int j = 0; j < graph[i].length; j++) {
+                if (graph[i][j]) {
                     symbol = '*';
                 } else {
                     symbol = ' ';
                 }
-                graph[i][j] = symbol;
-                System.out.print(graph[i][j]);
+                graph2[i][j] = symbol;
+                System.out.print(graph2[i][j]);
+
             }
             System.out.println();
+
 
         }
     }
 }
-
