@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb28793-801d-4412-ac71-f3569d7010dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Cell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoL/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoL/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoL/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoL/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoL/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoL/Game.java" afterDir="false" />
@@ -48,13 +46,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2531" />
+          <entry key="java" value="3020" />
           <entry key="txt" value="266" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2531" />
+          <entry key="JAVA" value="3020" />
           <entry key="PLAIN_TEXT" value="266" />
         </counts>
       </usages-collector>
@@ -69,32 +67,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GoL/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GoL/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-              <folding>
-                <element signature="e#69#70#0" expanded="true" />
-                <element signature="e#97#98#0" expanded="true" />
-                <element signature="e#133#134#0" expanded="true" />
-                <element signature="e#161#162#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GoL/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GoL/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="270">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -118,9 +113,9 @@
         <option value="$PROJECT_DIR$/src/Field.java" />
         <option value="$PROJECT_DIR$/src/GoL/.gitignore" />
         <option value="$PROJECT_DIR$/src/GoL/readme.txt" />
-        <option value="$PROJECT_DIR$/src/GoL/Game.java" />
         <option value="$PROJECT_DIR$/src/GoL/Cell.java" />
         <option value="$PROJECT_DIR$/src/GoL/Field.java" />
+        <option value="$PROJECT_DIR$/src/GoL/Game.java" />
       </list>
     </option>
   </component>
@@ -167,7 +162,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539417748376" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539420793444" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,6 +219,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="957" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69508195" visible="true" weight="0.1565601" />
       <window_info id="Structure" order="1" sideWeight="0.5012225" side_tool="true" weight="0.2491731" />
@@ -239,7 +235,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4983462" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49944875" visible="true" weight="0.3322314" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49944875" weight="0.3322314" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5016538" side_tool="true" weight="0.41322315" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289256" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49944875" weight="0.3289256" />
@@ -273,28 +269,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GoL/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="82" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GoL/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="e#69#70#0" expanded="true" />
-            <element signature="e#97#98#0" expanded="true" />
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GoL/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="270">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GoL/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
