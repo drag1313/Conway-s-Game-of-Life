@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb28793-801d-4412-ac71-f3569d7010dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GoL/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoL/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game_of_Life/GoL/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoL/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoL/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoL/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoL/Game.java" afterDir="false" />
     </list>
@@ -20,15 +18,16 @@
     <session id="601415690">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,13 +45,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3020" />
+          <entry key="java" value="3774" />
           <entry key="txt" value="266" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3020" />
+          <entry key="JAVA" value="3774" />
           <entry key="PLAIN_TEXT" value="266" />
         </counts>
       </usages-collector>
@@ -68,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/GoL/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -76,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GoL/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="686">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,8 +87,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GoL/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,6 +134,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,11 +161,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539420793444" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539709393807" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -221,7 +223,7 @@
     <frame x="67" y="25" width="957" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69508195" visible="true" weight="0.1565601" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.69508195" visible="true" weight="0.16758545" />
       <window_info id="Structure" order="1" sideWeight="0.5012225" side_tool="true" weight="0.2491731" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -230,15 +232,15 @@
       <window_info id="Favorites" order="6" sideWeight="0.30491802" side_tool="true" weight="0.2491731" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4983462" visible="true" weight="0.41322315" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983462" weight="0.41322315" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4983462" weight="0.3295082" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49944875" weight="0.3322314" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49944875" weight="0.33114755" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5016538" side_tool="true" weight="0.41322315" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289256" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49944875" weight="0.3289256" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49944875" visible="true" weight="0.3289256" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -260,31 +262,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GoL/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GoL/readme.txt" />
     <entry file="file://$PROJECT_DIR$/src/GoL/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GoL/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="300">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GoL/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="686">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
