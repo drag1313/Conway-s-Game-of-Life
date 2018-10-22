@@ -17,7 +17,7 @@ public class Game {
     final int POINT_RADIUS = 10;
     final int FIELD_SIZE = (MASS_SIZE + 1) * POINT_RADIUS - 3;
     boolean goNextGeneration = false;
-    int showDelay = 200;
+    int showDelay = 1000;
     boolean[][] oldGeneration = new boolean[MASS_SIZE][MASS_SIZE];
     boolean[][] newGeneration = new boolean[MASS_SIZE][MASS_SIZE];
     Canvas canvasPanel;
@@ -51,27 +51,41 @@ public class Game {
                 canvasPanel.repaint();
             }
         });
+        JButton stopButton = new JButton("Stop");
+        stepButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                goNextGeneration=false;
+            }
+        });
 
         JButton goButton = new JButton("Play");
         goButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                    goNextGeneration = !goNextGeneration;
-                    goButton.setText(goNextGeneration ? "Stop" : "Play");
 
-                    while (true) {
-                        if (goNextGeneration) {
-                            Life();
-                            canvasPanel.repaint();
-                            try {
-                                Thread.sleep(showDelay);
-                            } catch (InterruptedException v) {
-                                v.printStackTrace();
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            goNextGeneration = !goNextGeneration;
+                            while (true) {
+                                if (goNextGeneration) {
+                                    Life();
+                                    canvasPanel.repaint();
+                                    try {
+                                        Thread.sleep(showDelay);
+                                    } catch (InterruptedException v) {
+                                        v.printStackTrace();
+                                    }
+
+                                }
+
                             }
 
                         }
+                    }).start();
 
-                    }
+
                 }
         });
 
@@ -80,11 +94,15 @@ public class Game {
         btnPanel.add(fillButton);
         btnPanel.add(stepButton);
         btnPanel.add(goButton);
+        btnPanel.add(stopButton);
 
 
         frame.getContentPane().add(BorderLayout.CENTER, canvasPanel);
         frame.getContentPane().add(BorderLayout.SOUTH, btnPanel);
         frame.setVisible(true);
+
+
+
 
 
     }
