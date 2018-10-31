@@ -15,9 +15,10 @@ public class Game {
     final int BTN_PANEL_HEIGHT = 58;
     final int MASS_SIZE = 50;
     final int POINT_RADIUS = 10;
+    final int R = 2;
     final int FIELD_SIZE = (MASS_SIZE + 1) * POINT_RADIUS - 3;
     boolean goNextGeneration = false;
-    int showDelay = 1000;
+    int showDelay = 400;
     boolean[][] oldGeneration = new boolean[MASS_SIZE][MASS_SIZE];
     boolean[][] newGeneration = new boolean[MASS_SIZE][MASS_SIZE];
     Canvas canvasPanel;
@@ -41,6 +42,7 @@ public class Game {
         canvasPanel = new Canvas();
         canvasPanel.setBackground(Color.WHITE);
 
+
         JButton fillButton = new JButton("Fill");
         fillButton.addActionListener(new FillButtonListener());
         JButton stepButton = new JButton("Step");
@@ -51,42 +53,38 @@ public class Game {
                 canvasPanel.repaint();
             }
         });
-        JButton stopButton = new JButton("Stop");
-        stepButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                goNextGeneration=false;
-            }
-        });
+
 
         JButton goButton = new JButton("Play");
+
         goButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                    new Thread(new Runnable() {
-                        @Override
-                        public void run() {
-                            goNextGeneration = !goNextGeneration;
-                            while (true) {
-                                if (goNextGeneration) {
-                                    Life();
-                                    canvasPanel.repaint();
-                                    try {
-                                        Thread.sleep(showDelay);
-                                    } catch (InterruptedException v) {
-                                        v.printStackTrace();
-                                    }
-
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        goNextGeneration = !goNextGeneration;
+                        goButton.setText(goNextGeneration ? "Stop" : "Play");
+                        while (true) {
+                            if (goNextGeneration) {
+                                Life();
+                                canvasPanel.repaint();
+                                try {
+                                    Thread.sleep(showDelay);
+                                } catch (InterruptedException v) {
+                                    v.printStackTrace();
                                 }
 
                             }
 
                         }
-                    }).start();
+
+                    }
+                }).start();
 
 
-                }
+            }
         });
 
 
@@ -94,7 +92,6 @@ public class Game {
         btnPanel.add(fillButton);
         btnPanel.add(stepButton);
         btnPanel.add(goButton);
-        btnPanel.add(stopButton);
 
 
         frame.getContentPane().add(BorderLayout.CENTER, canvasPanel);
@@ -102,8 +99,20 @@ public class Game {
         frame.setVisible(true);
 
 
+    }
 
-
+    class Cell extends JPanel {
+        @Override
+        public void paint(Graphics g) {
+            super.paint(g);
+            for (int x = 0; x < MASS_SIZE; x++) {
+                for (int y = 0; y < MASS_SIZE; y++) {
+                    if (oldGeneration[x][y]) {
+                        g.fillOval(x * R, y * R, R, R);
+                    }
+                }
+            }
+        }
 
     }
 
@@ -137,6 +146,7 @@ public class Game {
         }
 
     }
+
 
     void Life() {
         for (int x = 0; x < MASS_SIZE; x++) {
